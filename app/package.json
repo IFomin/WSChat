@@ -1,0 +1,16 @@
+{
+  "name": "Chat",
+  "version": "1.4.0",
+  "description": "Chat app",
+  "author": "Chat <team@whitesaas.com>",
+  "license": "UNLICENSED",
+  "homepage": "https://saas-support.ru",
+  "main": "main.js",
+  "dependencies": {
+    "auto-launch": "^2.0.1",
+    "electron-editor-context-menu": "^1.1.1",
+    "electron-notify": "^0.1.0",
+    "os-locale": "^1.4.0",
+    "simple-spellchecker": "^0.9.0"
+  }
+}
