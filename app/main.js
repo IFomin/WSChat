@@ -78,10 +78,7 @@ var autoUpdater = require('auto-updater');
 var platform = os.platform() + '_' + os.arch();
 var version = app.getVersion();
 
-//autoUpdater.setFeedURL('http://localhost:3000/update/win32/RELEASES');
-//autoUpdater.setFeedURL('http://hz-igor.sharing.lv:5014/update/' + platform + '/' + version);
 autoUpdater.setFeedURL('http://download.saas-support.com/update/' + platform + '/' + version);
-//autoUpdater.setFeedURL('http://hz-igor.sharing.lv:5014/update/win32_ia32/0.1.0/RELEASES');
 autoUpdater.on('update-downloaded', function(){
     autoUpdater.quitAndInstall();
 });
@@ -121,9 +118,7 @@ if (globalSettings.get('auto_lunch')) {
 }
 var operatorStatus = require('./operator_status.js');
 
-//var serverDomain = "https://whitesaas.com";
-//var serverDomain = "http://whitesaas.dev";
-var serverDomain = "http://ru.callbackkiller";
+var serverDomain = "https://whitesaas.com";
 
 var force_quit = false;
 
